@@ -8,6 +8,11 @@ fontsize: 11pt
 output: flexdashboard::flex_dashboard
 ---
 
+
+
+SidebarName {.sidebar}
+----------------------
+
 Column
 -------------------------------------
 
