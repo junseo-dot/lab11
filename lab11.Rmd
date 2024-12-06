@@ -7,3 +7,19 @@ geometry: margin=1in
 fontsize: 11pt
 output: flexdashboard::flex_dashboard
 ---
+
+Column
+-------------------------------------
+
+### Component 1
+
+```{r}
+```
+
+Column
+-------------------------------------
+
+### Component 2
+
+```{r}
+```
