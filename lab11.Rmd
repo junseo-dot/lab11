@@ -8,7 +8,13 @@ fontsize: 11pt
 output: flexdashboard::flex_dashboard
 ---
 
+```{r setup, include = FALSE}
+library(tidyverse)
+library(plotly)
+library(crosstalk)
 
+pokemon <- read_csv("pokemon.csv")
+```
 
 SidebarName {.sidebar}
 ----------------------
@@ -24,7 +30,7 @@ Column
 Column
 -------------------------------------
 
-### Component 2
+### Component 2.
 
 ```{r}
 ```
