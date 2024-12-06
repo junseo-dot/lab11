@@ -24,25 +24,25 @@ filter_select("poke_type", "Pokemon Type", shared_pokemon, ~`Type 1`)
 ```
 
 
-Column
+Column 1
 -------------------------------------
 
-### Component 1
+### Distribution of Stat by Pokemon Type
 
 ```{r}
 p1 <- shared_pokemon %>%
   ggplot(aes(x = reorder(`Type 1`, Total, FUN = median),
                           y = Total, fill = `Type 1`)) +
   geom_boxplot() +
-  labs(x = "Type of Pokemon")
+  labs(x = "Type of Pokemon") + theme(axis.text.x = element_text(angle = 45))
 
 ggplotly(p1)
 ```
 
-Column
+Column 2
 -------------------------------------
 
-### Component 2
+### Attack vs Defense by Pokemon Type
 
 ```{r}
 p <- shared_pokemon %>%
