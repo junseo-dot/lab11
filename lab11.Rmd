@@ -30,7 +30,17 @@ Column
 Column
 -------------------------------------
 
-### Component 2.
+### Component 2
 
 ```{r}
+p <- ggplot(pokemon, aes(x = Defense, y = Attack, color = `Type 1`)) +
+  geom_point() +
+  labs(title = "Attack vs Defense by Type 1",
+       x = "Defense",
+       y = "Attack")
+
+ggplotly(p)
 ```
+
+
+
